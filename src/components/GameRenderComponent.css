@@ -1,0 +1,38 @@
+.quiz-game {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin-top: 3%;
+    
+
+}
+
+.question-holder {
+    width: 900px;
+}
+
+.answer-holder {
+    margin-top: 3%;
+}
+
+.answer {
+    border: 1px dotted rgb(175, 175, 175);
+    margin-bottom: 5px;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgb(68, 145, 180);
+}
+
+.answer:hover {
+    background-color: rgb(68, 145, 180);;
+}
+
+.answer:active{
+    background-color: rgb(68, 145, 180);;
+}
+

@@ -1,0 +1,80 @@
+label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    display: block;
+    width: 600px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 3%;
+  }
+
+  .error {
+    color: red;
+  }
+
+  .question-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+  }
+  
+  .question-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  .q-button-reset {
+    background-color: #c5505f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+
+  .q-button-submit {
+    background-color: #50c594;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .radio-label {
+    display: flex;
+    margin-top: 8px;
+    align-items: baseline;
+  }
+  

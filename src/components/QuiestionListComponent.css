@@ -1,0 +1,81 @@
+.available-questions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+
+.question-holder-set {
+    height: 160px;
+    overflow: auto;
+    width: 600px;
+    padding: 1%;
+
+}
+
+.main-quetion-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 900px;
+    margin-top: 2%;
+}
+
+.secondary-quetion-holder {
+  margin-top: 3%;
+  border: 1px dotted grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.question-on-list {
+    flex-grow: 2;
+    height: 21px;
+    width: 180px;
+}
+
+.no-overflow {
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.remove-button-qlist {
+  background-color: #c5505f;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(224, 224, 224); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(136, 133, 133); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #242222; 
+  }
