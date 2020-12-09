@@ -1,7 +1,6 @@
 import React, {} from 'react'
 import { connect } from 'react-redux'
 import {Link} from 'react-router-dom'
-import { startGame, checkAnswer, nextQuestion, finishGame, resetGame } from '../redux';
 import './GamePage.css'
 import GameRenderComponent from './GameRenderComponent'
 import GameFinishComponent from './GameFinishComponent'
@@ -53,16 +52,7 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        startGame: data => dispatch(startGame(data)),
-        checkAnswer: data => dispatch(checkAnswer(data)),
-        nextQuestion: data => dispatch(nextQuestion(data)),
-        finishGame: () => dispatch(finishGame()),
-        resetGame: () => dispatch(resetGame()),
 
-    }
-}
 
 // connect() connects component to redux store
-export default connect(mapStateToProps, mapDispatchToProps)(GamePage);
+export default connect(mapStateToProps)(GamePage);

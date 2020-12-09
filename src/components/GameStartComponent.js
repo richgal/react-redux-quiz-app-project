@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { connect } from 'react-redux'
-import { startGame, checkAnswer, nextQuestion, finishGame, resetGame } from '../redux';
+import { startGame} from '../redux';
 import './GamePage.css'
 import './GameStartComponent.css'
 
@@ -60,11 +60,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         startGame: data => dispatch(startGame(data)),
-        checkAnswer: data => dispatch(checkAnswer(data)),
-        nextQuestion: data => dispatch(nextQuestion(data)),
-        finishGame: () => dispatch(finishGame()),
-        resetGame: () => dispatch(resetGame()),
-
     }
 }
 

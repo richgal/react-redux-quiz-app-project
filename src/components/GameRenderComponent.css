@@ -40,7 +40,7 @@
 }
 
 .info-placeholder-box {
-    max-height: 35px;
+    max-height: 45px;
 }
 
 .info-placeholder {
@@ -79,9 +79,9 @@
 }
 
 .game-buttons-gen:disabled {
-    background-color: grey;
-    color: rgb(187, 187, 187);
-    border: 1px dotted rgb(54, 54, 54);
+    background-color: rgb(173, 173, 173);
+    color: rgb(219, 219, 219);
+    border: 1px dotted rgb(173, 173, 173);
     cursor: not-allowed;
   }
 

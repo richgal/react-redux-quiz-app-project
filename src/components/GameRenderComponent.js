@@ -102,6 +102,7 @@ function GameRenderComponent(props) {
                     <p className={checkClicked ? 'info-placeholder' : 'hidden-placeholder'}>You are technically correct. That's the best kind of correct 👌</p> :
                     <p className={checkClicked ? 'info-placeholder' : 'hidden-placeholder'}>Wrong answer ❌</p> 
                     }
+                    <p className={checkClicked ? 'info-placeholder' : 'hidden-placeholder'}>The correct answer is: "{questionArray[index].questionForm[correctAnswer]}" </p> 
                 </div>
 
                 <div className='game-buttons'>
