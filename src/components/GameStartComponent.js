@@ -4,7 +4,7 @@ import { startGame} from '../redux';
 import './GamePage.css'
 import './GameStartComponent.css'
 
-
+// This compnenet manages the game initialisation of the game
 function GameStartComponent(props) {
     const [name, setName] = useState('')
 

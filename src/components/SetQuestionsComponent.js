@@ -140,7 +140,7 @@ function SetQuestionsComponent(props) {
                     
                     {/*To add 5 questions to the list*/}
                 <div className='populate-box'>
-                    <p>If there are less then 2 questions, you can generate some. Click on the "populate" button</p>
+                    <p>If there are fewer then 2 questions, you can generate some. Click on the "populate" button</p>
                     <button disabled={props.quiestionList.length > 2} className='populate' onClick={() => populate(listOfQuiz)}>populate</button>
                 </div>
                 </div>

@@ -6,6 +6,7 @@ import GameRenderComponent from './GameRenderComponent'
 import GameFinishComponent from './GameFinishComponent'
 import GameStartComponent from './GameStartComponent'
 
+// This components checks if questions are available to start the game
 function GamePage(props) {
 
     const questionArray = props.quiestionList;

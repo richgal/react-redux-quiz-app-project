@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { startGame, checkAnswer, nextQuestion, finishGame, resetGame, addPoint } from '../redux';
 import './GameRenderComponent.css'
 
+// this component handles the game logic and the render of the qiuz
 function GameRenderComponent(props) {
     const [answer, setAnswer] = useState('')
     const [checkClicked, setCheckClicked] = useState(false)

@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { removeQuestion } from '../redux';
 import './QuiestionListComponent.css'
 
+
+// this componenet manages the question lists on the question setter page
 function QuiestionListComponent(props) {
 
     const questionArray = props.quiestionList

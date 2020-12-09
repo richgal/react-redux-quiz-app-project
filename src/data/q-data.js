@@ -21,7 +21,7 @@ export const listOfQuiz = [
         answer1: "plutonium",
         answer2: "osmium ",
         answer3: "iridium",
-        answer4: "Burzum :D ",
+        answer4: "Burzum",
         correctAnswer: "answer4",
         question: "Which is the heaviest metal?",
         uId: "c7002ca770e21a0bbdffe8b4dc466b41445d4cf3",
