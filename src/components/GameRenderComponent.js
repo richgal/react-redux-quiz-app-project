@@ -18,6 +18,7 @@ function GameRenderComponent(props) {
     let currentAnswer2 = questionArray[index].questionForm.answer2
     let currentAnswer3 = questionArray[index].questionForm.answer3
     let currentAnswer4 = questionArray[index].questionForm.answer4
+    const correctAnswer = questionArray[index].questionForm.correctAnswer
     
     
 
@@ -53,8 +54,7 @@ function GameRenderComponent(props) {
     }
 
 
-    const checkButton = async (data) => {
-        const correctAnswer = questionArray[index].questionForm.correctAnswer
+    const checkButton = (data) => {
         props.checkAnswer(data)
         setCheckClicked(true)
         if (data === correctAnswer) {
@@ -97,15 +97,20 @@ function GameRenderComponent(props) {
                 </div>
             </div>
             <div className='button-and-info'>
-                <p>Info placeholder</p>
+                <div className='info-placeholder-box'>
+                    {answer === correctAnswer ?
+                    <p className={checkClicked ? 'info-placeholder' : 'hidden-placeholder'}>You are technically correct. That's the best kind of correct 👌</p> :
+                    <p className={checkClicked ? 'info-placeholder' : 'hidden-placeholder'}>Wrong answer ❌</p> 
+                    }
+                </div>
 
                 <div className='game-buttons'>
-                <button disabled={answer === '' || checkClicked} onClick={() => checkButton(answer)}>Check</button>
+                <button className='game-buttons-gen' disabled={answer === '' || checkClicked} onClick={() => checkButton(answer)}>Check</button>
                 {gameState.numOfQuestions - 1 === gameState.indexOfQuestion ?
-                <button disabled={gameState.answerSubmitted === ''} onClick={() => finishClick()}>Finish</button> : 
-                <button disabled={gameState.answerSubmitted === ''} onClick={() => nextClick()}>Next</button>
+                <button className='game-buttons-gen' disabled={gameState.answerSubmitted === ''} onClick={() => finishClick()}>Finish</button> : 
+                <button className='game-buttons-gen' disabled={gameState.answerSubmitted === ''} onClick={() => nextClick()}>Next</button>
                 }
-                <button onClick={() => resetClick()} >Reset Game</button>
+                <button className='game-buttons-reset' onClick={() => resetClick()} >Reset Game</button>
                 </div>
             </div>
         </div>

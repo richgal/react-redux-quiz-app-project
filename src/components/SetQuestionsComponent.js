@@ -6,6 +6,7 @@ import hash from 'object-hash'
 import { addQuestion } from '../redux';
 import TextError from './TextError'
 import './SetQuestionsComponent.css'
+import {listOfQuiz} from '../data/q-data'
 
 
 const initialValues = {
@@ -21,6 +22,7 @@ const initialValues = {
 };
 
 
+// formik submission setup, to manage button and form input states
 const onSubmit = (values, onSubmitProps) => {
     console.log('Form data', values);
     console.log('submitProps', onSubmitProps)
@@ -28,6 +30,7 @@ const onSubmit = (values, onSubmitProps) => {
     onSubmitProps.resetForm()
 };
 
+// Yup validations for the formik schema
 const validationSchema = Yup.object().shape({
     questionForm: Yup.object().shape({
         question: Yup.string().required('Question is required'),
@@ -42,9 +45,18 @@ const validationSchema = Yup.object().shape({
 
 function SetQuestionsComponent(props) {
 
-    return (
-        
+    // method to populate question list
+    const populate = (qlist) => {
+        console.log(qlist[0])
+        props.addQuestion(qlist[0])
+        props.addQuestion(qlist[1])
+        props.addQuestion(qlist[2])
+        props.addQuestion(qlist[3])
+        props.addQuestion(qlist[4])
+    }
 
+
+    return (    
         <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -124,7 +136,13 @@ function SetQuestionsComponent(props) {
                     {/*disabled if form contains errors or form is empty / untouched */}
                     <button className='q-button-submit' type='submit' disabled={!formik.dirty || !formik.isValid} onClick={() => (props.addQuestion(formik.values))}>Save question</button>
                 </div>
+
                     
+                    {/*To add 5 questions to the list*/}
+                <div className='populate-box'>
+                    <p>If there are less then 2 questions, you can generate some. Click on the "populate" button</p>
+                    <button disabled={props.quiestionList.length > 2} className='populate' onClick={() => populate(listOfQuiz)}>populate</button>
+                </div>
                 </div>
                 </Form>
                 )}}

@@ -7,7 +7,7 @@ function NavBar() {
     return (
         <div className='navbar' >
             <div className='nav-elements'>
-                <h1 className='nav-logo'>QGAP</h1>
+                <h1 className='nav-logo'>Quiz Game App Project</h1>
                 <Link className='nav-link' to='/'>Game page</Link>
                 <Link className='nav-link' to='/question-setter'>Question Setter</Link>
             </div>

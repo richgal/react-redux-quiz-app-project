@@ -20,15 +20,20 @@ function GameStartComponent(props) {
         setName(e.target.value)
     }
 
+    const clickStart = (data) => {
+        props.startGame(data)
+        setName("")
+    }
+
     
     return (
         <div className='game-start'>
             <div>
             {!playerExist && !playerCompleted ? 
-            <div>
+            <div className='game-start-inner'>
             <h2>Please submit your name and the game starts</h2>
-            <input className='name-input' type='text' onChange={handleChange}></input>
-            <button className='name-submit-button' onClick={() => props.startGame([name, questionArrayLength])} >Submit and start Game</button>
+            <input className='name-input' type='text' placeholder='Your name here' onChange={handleChange}></input>
+            <button disabled={!name} className='name-submit-button' onClick={() => clickStart([name, questionArrayLength])} >Submit and Start</button>
             </div> :
             null }
             </div>

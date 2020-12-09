@@ -3,3 +3,35 @@
     margin-top: 3%;
 }
 
+.quiz-game-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-h2 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.front-h3 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.front-link {
+    background-color: rgb(76, 185, 161);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+}

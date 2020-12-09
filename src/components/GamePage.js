@@ -21,11 +21,11 @@ function GamePage(props) {
         <div className='game-page'>
 
             {questionArray.length === 0 ? 
-            <div>
-            <h2>Hi, welcome to the Quiz Game App project</h2>
-            <h2>To start the quiz game, add some question to the game on the queston setter page</h2>
-            <h2>Please click on the link below to set some qestions</h2>
-            <Link className='nav-link' to='/question-setter'>Question Setter</Link>
+            <div className='quiz-game-front'>
+            <h2 className='front-h2'>Hi, welcome to the Quiz Game App Project</h2>
+            <h2 className='front-h2'>To start the quiz game, add some question to the game on the queston setter page</h2>
+            <h2 className='front-h3'>Click on the green button to set some qestions</h2>
+            <Link className='front-link' to='/question-setter'>Set some questions</Link>
             </div> :
             <div>
             <GameStart/> 

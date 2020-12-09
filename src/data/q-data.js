@@ -1,0 +1,48 @@
+export const listOfQuiz = [
+    {questionForm: {
+        answer1: "10 gardeners",
+        answer2: "60 gardeners",
+        answer3: "6 gardeners",
+        answer4: "15 gardeners",
+        correctAnswer: "answer3",
+        question: "6 gardeners plant 6 trees in 6 minutes. How many gardeners will be needed to plant 60 trees in 60 minutes?",
+        uId: "cb4a7b47c47a21e8d21b23f6bd088e3036a15740",
+    }},
+    {questionForm: {
+        answer1: "50 cents",
+        answer2: "$1",
+        answer3: "25 cents",
+        answer4: "$1.25",
+        correctAnswer: "answer3",
+        question: "A postcard and stamp together cost $1.50. The postcard costs one dollar more than the stamp. How much does the stamp cost?",
+        uId: "1d659f91e2da0309f0b3644d60c36c7a101a1cfe",
+    }},
+    {questionForm: {
+        answer1: "plutonium",
+        answer2: "osmium ",
+        answer3: "iridium",
+        answer4: "Burzum :D ",
+        correctAnswer: "answer4",
+        question: "Which is the heaviest metal?",
+        uId: "c7002ca770e21a0bbdffe8b4dc466b41445d4cf3",
+    }},
+    {questionForm: {
+        answer1: "Herman Melville",
+        answer2: "Charles Darwin",
+        answer3: "Fray Tomás de Berlanga",
+        answer4: "Robert FitzRoy",
+        correctAnswer: "answer3",
+        question: "Who discovered the Galapagos Islands? ",
+        uId: "08875a876c4e819e0271deb5a0ad8173d23a6ff6",
+    }},
+    {questionForm: {
+        answer1: "109 kg+",
+        answer2: "102 kg+",
+        answer3: "96 kg+",
+        answer4: "120 kg+",
+        correctAnswer: "answer1",
+        question: "What is the heaviest category in Olympic weightlifting? ",
+        uId: "790ab57a60cd06748f3932f9819e0ff316d8bf86",
+    }},
+
+]
