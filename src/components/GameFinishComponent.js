@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { resetGame } from '../redux';
 import './GameFinishComponent.css'
 
-// this component manages is end of the game when finished button clicked
+// this component manages the end of the game when finished button clicked
 function GameFinishComponent(props) {
 
     const gameState = props.gameState;

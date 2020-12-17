@@ -45,7 +45,7 @@ const validationSchema = Yup.object().shape({
 
 function SetQuestionsComponent(props) {
 
-    // method to populate question list
+    //populate question list
     const populate = (qlist) => {
         console.log(qlist[0])
         props.addQuestion(qlist[0])
@@ -65,7 +65,6 @@ function SetQuestionsComponent(props) {
             validateOnMount
             >
             {formik => {
-            //console.log('Formik props', formik)
 
             // calculate unique identifier
             let hashCalc = hash(formik.values) 
